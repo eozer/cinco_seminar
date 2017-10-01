@@ -1,0 +1,60 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{CSdSSA12}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\input babelbst.tex
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[Arc17]{arcuri2017restful}
+Arcuri, A., Restful api automated test case generation.
+\newblock  {\em Software Quality, Reliability and Security (QRS), 2017 IEEE
+  International Conference on}. IEEE, 2017, \bblpages{} 9--20.
+
+\bibitem[CK09]{chakrabarti2009test}
+Chakrabarti, S.~K. \bbland{} Kumar, P., Test-the-rest: An approach to testing
+  restful web-services.
+\newblock  {\em Future Computing, Service Computation, Cognitive, Adaptive,
+  Content, Patterns, 2009. COMPUTATIONWORLD'09. Computation World:}. IEEE,
+  2009, \bblpages{} 302--308.
+
+\bibitem[CR10]{chakrabarti2010connectedness}
+Chakrabarti, S.~K. \bbland{} Rodriquez, R., Connectedness testing of restful
+  web-services.
+\newblock  {\em Proceedings of the 3rd India software engineering conference}.
+  ACM, 2010, \bblpages{} 143--152.
+
+\bibitem[CSdSSA12]{correa2012defining}
+Correa, A.~L., Silva-de Souza, T., Schmitz, E.~A. \bbland{} Alencar, A.~J.,
+  Defining restful web services test cases from uml models.
+\newblock  {\em SEKE}, 2012, \bblpages{} 319--323.
+
+\bibitem[FB15]{fertig2015model}
+Fertig, T. \bbland{} Braun, P., Model-driven testing of restful apis.
+\newblock  {\em Proceedings of the 24th International Conference on World Wide
+  Web}. ACM, 2015, \bblpages{} 1497--1502.
+
+\bibitem[LSLT13]{lamela2013towards}
+Lamela~Seijas, P., Li, H. \bbland{} Thompson, S., Towards property-based
+  testing of restful web services.
+\newblock  {\em Proceedings of the twelfth ACM SIGPLAN workshop on Erlang}.
+  ACM, 2013, \bblpages{} 77--78.
+
+\bibitem[NCH{\etalchar{+}}14]{navas2014rest}
+Navas, A., Capelastegui, P., Huertas, F., Alonso-Rodriguez, P. \bbland{}
+  Due{\~n}as, J.~C., Rest service testing based on inferred xml schemas.
+\newblock {\em Network Protocols and Algorithms}, 6,2(2014), \bblpages{} 6--21.
+
+\bibitem[PES13]{pinheiro2013model}
+Pinheiro, P. V.~P., Endo, A.~T. \bbland{} Simao, A., Model-based testing of
+  restful web services using uml protocol state machines.
+\newblock  {\em Brazilian Workshop on Systematic and Automated Software
+  Testing}, 2013.
+
+\bibitem[RVG10]{reza2010framework}
+Reza, H. \bbland{} Van~Gilst, D., A framework for testing restful web services.
+\newblock  {\em Information Technology: New Generations (ITNG), 2010 Seventh
+  International Conference on}. IEEE, 2010, \bblpages{} 216--221.
+
+\end{thebibliography}
