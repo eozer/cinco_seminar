@@ -97,29 +97,27 @@
 \ProcessOptions\relax
 \LoadClass{article}[2000/05/19]
 \RequirePackage{latexsym}[1998/08/17 v2.2e Standard LaTeX package (lasy symbols)]
-\RequirePackage[latin9]{inputenc}[2000/07/01 v0.996 Input encoding file ]
+\RequirePackage[utf8]{inputenc}[2000/07/01 v0.996 Input encoding file ]
 \RequirePackage[T1]{fontenc}[2000/08/30 v1.91 Standard LaTeX package]
+
 \if@finnish
   \RequirePackage[finnish]{babel}[2001/03/01 v3.7h The Babel package]
-\else
-  \if@english
-    \RequirePackage[english]{babel}[2001/03/01 v3.7h The Babel package]
-  \else
-    \if@swedish
-      \RequirePackage[swedish]{babel}[2001/03/01 v3.7h The Babel package]
-    \else
-      \RequirePackage[finnish]{babel}[2001/03/01 v3.7h The Babel package]
-    \fi
-  \fi
 \fi
+\if@english
+  \RequirePackage[english]{babel}[2001/03/01 v3.7h The Babel package]
+\fi
+\if@swedish
+   \RequirePackage[swedish]{babel}[2001/03/01 v3.7h The Babel package]
+\fi
+
 \RequirePackage{geometry}[1999/10/07 v2.2 Page Geometry]
 \newcommand{\defaultsettings}{%
   \if@twoside
-    \geometry{top=2.5cm, left=2.8cm, right=3.2cm,
+    \geometry{top=2.5cm, left=2.8cm,
               textwidth=15cm, textheight=23cm,
               headheight=0.5cm, headsep=0.5cm}%
   \else
-    \geometry{top=2.5cm, left=3.5cm, right=2.5cm,
+    \geometry{top=2.5cm, left=3.5cm,
               textwidth=15cm, textheight=23cm,
               headheight=0.5cm, headsep=0.5cm}%
   \fi
@@ -210,7 +208,7 @@
   \hspace{1em}%
 }
 \RequirePackage{openbib}
-\addto\captionsfinnish{\def\refname{L‰hteet}}
+\addto\captionsfinnish{\def\refname{L√§hteet}}
 \addto\captionsenglish{\def\enclname{Appendices}}
 \addto\captionsswedish{\def\enclname{Bilagor}}
 \renewenvironment{thebibliography}[1]
@@ -218,7 +216,7 @@
         \@mkboth{\uppercase{\refname}}{\uppercase{\refname}}
         \addcontentsline{toc}{section}{\refname}}%
       \list{\@biblabel{\arabic{enumiv}}}%
-           {\settowidth\labelwidth{\makebox[5em]{}}%
+           {\settowidth\labelwidth{\makebox[1em]{}}%
             \leftmargin\labelwidth
             \advance\leftmargin\labelsep
             \usecounter{enumiv}%
@@ -237,7 +235,7 @@
 \level{}
 
 \addto\captionsfinnish{%
-  \def\dateofacceptance{hyv‰ksymisp‰iv‰}%
+  \def\dateofacceptance{hyv√§ksymisp√§iv√§}%
   \def\grade{arvosana}%
   \def\instructor{arvostelija}%
   \def\uh{HELSINGIN YLIOPISTO}%
@@ -255,7 +253,7 @@
 \addto\captionsswedish{%
   \def\dateofacceptance{godk.datum}%
   \def\grade{vitsord}%
-  \def\instructor{bedˆmare}%
+  \def\instructor{bed√∂mare}%
   \def\uh{HELSINGFORS UNIVERSITET}%
   \def\helsinki{Helsingfors}%
   \def\ccs{ACM Computing Classification System (CCS):}%
@@ -315,10 +313,21 @@
 \classification{}
 \keywords{}
 
+% fill out the number of pages per language
+\if@finnish
+  \numberofpagesinformation{\numberofpages\ sivua + \numberofappendixpages\ liitesivua}
+\fi
+\if@english 
+  \numberofpagesinformation{\numberofpages\ pages + \numberofappendixpages\ appendix pages}
+\fi
+\if@swedish  
+  \numberofpagesinformation{\numberofpages\ sidor + \numberofappendixpages\ appendix sidor}
+\fi
+
 \addto\captionsfinnish{%
   \faculty{Matemaattis-luonnontieteellinen tiedekunta}
-  \department{Tietojenk‰sittelytieteen laitos}%
-  \subject{Tietojenk‰sittelytiede}
+  \department{Tietojenk√§sittelytieteen laitos}%
+  \subject{Tietojenk√§sittelytiede}
 }
 \addto\captionsenglish{%
   \faculty{Faculty of Science}
@@ -327,7 +336,7 @@
 }
 \addto\captionsswedish{%
   \faculty{Matematisk-naturvetenskapliga fakulteten}
-  \department{Institutionen fˆr datavetenskap}%
+  \department{Institutionen f√∂r datavetenskap}%
   \subject{Datavetenskap}
 }
 \newsavebox{\@abstract}

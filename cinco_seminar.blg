@@ -1,3 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: cinco_seminar.aux
-The style file: tktl.bst
-Database file #1: lahteet.bib
+The style file: ieeetr.bst
+Database file #1: references.bib
+Warning--entry type for "programmableweb" isn't style-file defined
+--line 89 of file references.bib
+Warning--entry type for "soapui" isn't style-file defined
+--line 98 of file references.bib
+Warning--empty journal in jayathilakaservice
+(There were 3 warnings)

@@ -1,61 +1,123 @@
-
+%allowed options finnish, swedish, english
+%after changing the language you may be forced to use recompile from scratch to get rid of errors
 \documentclass[english]{tktltiki}
-\usepackage[pdftex]{graphicx}
-\usepackage{graphicx}
+\usepackage{epsfig}
 \usepackage{subfigure}
 \usepackage{url}
-\usepackage{xcolor}
-\usepackage{amsmath}
+
 \begin{document}
-
-
+%\doublespacing
 \onehalfspacing
-\title{Review paper: Testing RESTful web services}
-\author{Ege Can Özer}
+%\singlespacing
+
+\title{Testing and Verification of RESTful Web Services}
+\author{Ege Can Ã–zer}
 \date{\today}
 
 \maketitle
 \numberofpagesinformation{\numberofpages\ pages + \numberofappendixpages\ appendices}
 
 \classification{\protect{\ \\
-	- [Applied computing],\\
-	-\quad\quad[Enterprise computing]\\
-	-\qquad\qquad[Enterprise computing]}}
+		\  Applied computing $\rightarrow$ Enterprise computing  $\rightarrow$ Service-oriented architectures\
+}}
 
-\keywords{Model-based testing, Test generation, Web services, Service-oriented architectures}
+
+\keywords{Service-oriented architectures, Software testing, Web services, REST}
 
 \begin{abstract}
-	What is the problem?\\
-	What I did in this paper\\
-	What are the findings?
+\setlength{\parindent}{1cm} % Default is 15pt.
+\setlength{\leftskip}{1cm}
+%\hangindent=1cm
+Today, service-oriented architectures (SOA) are widely used and have become a major discipline for enterprise applications. Until the last decade, the most popular way to implement the services was using Simple Object Access Protocol (SOAP). Including the big companies such as Google, Facebook, Twitter, the direction moved towards to Representational State Transfer (REST) services due to the advantages such as its lightweight and scalability.
+
+%Software testing is important and crucial in any software development process, because of error handling, quality assurance,  and performance awareness. 
+Unlike the conventional software testing, web services require different testing methods due to their loosely coupled, headless, and distributed architectures. In the literature, general trends and challenges of SOA testing reviewed, but the discussion primarily focused on the SOAP web services. Having said that there is a demand to demonstrate recent approaches concerning testing RESTful services.
+
+This paper presents different means for testing and verification of RESTful web services, showing the advantages and disadvantages of testing tools and current approaches; and includes an analysis of five of this specialized methods from the service testing point of view. Based on the comparative results, we will identify issues for the future work.
+\\
 \end{abstract}
 
 \mytableofcontents
 
 \section{Introduction}
-The deadly part volume 2.
+Today, service-oriented architectures (SOA) are widely used and have become a major discipline for enterprise applications. Until the last decade, the most popular way to implement the services was using Simple Object Access Protocol (SOAP). Including the big companies such as Google, Facebook, Twitter, the direction moved towards to Representational State Transfer (REST) services due to the advantages such as its lightweight and scalability. In 2012, ProgrammableWeb reported that 75\% out of all APIs follows REST architectural style, and it continuous to grow exponentially \cite{programmableweb}.
 
-\section{Challenges and  approaches}
-Could be nice section name as well.
+Testing plays a critical role to ensure certain reliability and quality for SOAs. Unlike the conventional system-level testing, testing methods differ in service centric systems. In the literature there are many articles presents a number of approaches to address the problems in SOA testing. Canfora and Di Penta \cite{canfora2009service} report a survey of SOA testing, they analyze the challenges from different stakeholders point of view and categorize them based on testing levels. Whereas, Bozkur et al. \cite{bozkurt2013testing} extends the research by surveying 177 papers, identifies the features of testing strategies. However, in both of the surveys the discussion primarily focuses on SOAP services.
 
-\section{Review of existing systems}
-Review of existing systems, simple as that.
+Nevertheless, many of the issues related to testing SOA based web-services shared with RESTful web-services. Generally, testing challenges in web services emerge from distributedness, loose-coupling, and lack of reliability of WWW as a common communication framework \cite{chakrabarti2009test}. Moreover, headless (lack of graphical user interface) structure of the web services makes manual testing difficult to interpret. Many other challenges do also exist due to the complexity and the limitations that are imposed by the SOA environment \cite{canfora2006testing, canfora2009service, bozkurt2013testing}. Still, various strategies have been put forward to handle testing and validation of SOA, ranging from testing frameworks, model-based testing to evolutionary algorithms.
+
+In this paper, 
+%In the literature, general trends and challenges of SOA testing reviewed, but the discussion primarily focused on the SOAP web services \cite{canfora2009service, bozkurt2013testing}. Moreover, REST differs from others due to its architectural constraints, such as statelessness, cacheability, uniform interface. Having said that there is a demand to demonstrate recent approaches concerning testing RESTful services.
+
+%On the other hand, Canfora and Di Penta \cite{canfora2009service, canfora2006testing} put forward several challenges and perspectives in the context of testing service-oriented systems, by which essentially fits in consideration of RESTful services. For example, adaptiveness is excellent and presents a strong relation to transparency problem of REST services. Further, Bozkurt et al. extend the testing perspectives each one separately, total of 14 groups; whereas Canfora and Di Penta consider only in 5 main groups. In an attempt to present recent studies about testing restful services, will follow studies as mentioned earlier as our direction.
+
+\begin{itemize}
+\item What are these identified testing strategies? Challenges in REST service testing.
+
+\item What am I gonna explain in this paper? What are they presenting in brief summary.
+
+\item Structure of the paper.
+\end{itemize}
+
+\section{Testing methods for REST services}
+Challenges in testing RESTful systems.
+
+During the last years, there has been several developments of testing techniques for RESTful web services. Summarize reviewed paper's features one by one. The next section provides an overview of system description of the reviewed papers
+
+\subsection{System description and principal features}
+% First article
+\textbf{\textit{Test-the-rest: An approach to testing restful web-services \cite{chakrabarti2009test}}}
+
+Paragraph to give an analysis 
+\\
+
+% Second article
+\textit{\textbf{Connectedness testing of restful web-services \cite{chakrabarti2010connectedness}}}
+
+Paragraph to give an analysis 
+\\
+
+\textit{\textbf{Model-Based Testing of RESTful Web Services Using UML Protocol State Machines \cite{pinheiro2013model}}}
+
+Paragraph to give an analysis 
+\\
+
+\textit{\textbf{REST service testing based on inferred XML schemas \cite{navas2014rest}}}
+
+Paragraph to give an analysis 
+\\
+
+\textit{\textbf{RESTful API Automated Test Case Generation \cite{arcuri2017restful}}}
+
+Paragraph to give an analysis
+
+\subsection{System analysis}
+In the literature there are various attempts to describe and compare the different testing systems. Bozkurt use this. Italyan bunu kullandi. Since the main focus is on the different spectrum of testing rest services, neither of the previous articles are not feasible to apply. Given the fact, the comparative analysis of the five RESTful web service methods is focused on mainly to following criterion: methodology, outcome.
+
+Provide a comparative analysis for the reviewed systems in the previous section. Comparative analysis
+
+\section{Future research}
+Talk about machine learning, search-based algorithms, evolutionary algorithms.
+
+Production ready approaches = NO
+
+Validation of approaches in the experiments. 
 
 \section{Conclusion}
-Here is an awesome conclusion.
+Present the topic again, summarize, and conclude with a future tendency under the consideration of testing the rest.
+
 \newpage
 \nocite{*}
-\bibliographystyle{tktl}
-\bibliography{lahteet}
+% one of these or  ...
+%\bibliographystyle{plain}
+%\bibliographystyle{acm}
+\bibliographystyle{ieeetr}
+
+% ... or this 
+%\bibliographystyle{apalike}
+
+\bibliography{references}
 
 \lastpage
 
-\appendices
-
-\pagestyle{empty}
-
-
-
 \end{document}
-
-
