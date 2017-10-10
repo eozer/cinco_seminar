@@ -2,8 +2,9 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: cinco_seminar.aux
 The style file: ieeetr.bst
 Database file #1: references.bib
 Warning--entry type for "programmableweb" isn't style-file defined
---line 89 of file references.bib
+--line 83 of file references.bib
+Warning--entry type for "webinject" isn't style-file defined
+--line 91 of file references.bib
 Warning--entry type for "soapui" isn't style-file defined
---line 98 of file references.bib
-Warning--empty journal in jayathilakaservice
+--line 100 of file references.bib
 (There were 3 warnings)

@@ -4,12 +4,6 @@
 ProgrammableWeb, ``Programmableweb is an information and news source about the
   web as a programmable platform,'' 2005.
 
-\bibitem{chakrabarti2009test}
-S.~K. Chakrabarti and P.~Kumar, ``Test-the-rest: An approach to testing restful
-  web-services,'' in {\em Future Computing, Service Computation, Cognitive,
-  Adaptive, Content, Patterns, 2009. COMPUTATIONWORLD'09. Computation World:},
-  pp.~302--308, IEEE, 2009.
-
 \bibitem{canfora2009service}
 G.~Canfora and M.~Di~Penta, ``Service-oriented architectures testing: A
   survey,'' {\em Software Engineering}, pp.~78--105, 2009.
@@ -18,6 +12,17 @@ G.~Canfora and M.~Di~Penta, ``Service-oriented architectures testing: A
 M.~Bozkurt, M.~Harman, and Y.~Hassoun, ``Testing and verification in
   service-oriented architecture: a survey,'' {\em Software Testing,
   Verification and Reliability}, vol.~23, no.~4, pp.~261--313, 2013.
+
+\bibitem{chakrabarti2009test}
+S.~K. Chakrabarti and P.~Kumar, ``Test-the-rest: An approach to testing restful
+  web-services,'' in {\em Future Computing, Service Computation, Cognitive,
+  Adaptive, Content, Patterns, 2009. COMPUTATIONWORLD'09. Computation World:},
+  pp.~302--308, IEEE, 2009.
+
+\bibitem{canfora2006testing}
+G.~Canfora and M.~Di~Penta, ``Testing services and service-centric systems:
+  Challenges and opportunities,'' {\em IT Professional}, vol.~8, no.~2,
+  pp.~10--17, 2006.
 
 \bibitem{chakrabarti2010connectedness}
 S.~K. Chakrabarti and R.~Rodriquez, ``Connectedness testing of restful
@@ -39,14 +44,9 @@ A.~Arcuri, ``Restful api automated test case generation,'' in {\em Software
   Quality, Reliability and Security (QRS), 2017 IEEE International Conference
   on}, pp.~9--20, IEEE, 2017.
 
-\bibitem{canfora2006testing}
-G.~Canfora and M.~Di~Penta, ``Testing services and service-centric systems:
-  Challenges and opportunities,'' {\em IT Professional}, vol.~8, no.~2,
-  pp.~10--17, 2006.
-
-\bibitem{jayathilakaservice}
-H.~Jayathilaka, C.~Krintz, and R.~Wolski, ``Service-driven computing with apis:
-  Challenges and emerging trends,'' 2016.
+\bibitem{webinject}
+WebInject, ``Webinject is a free tool for automated testing of web applications
+  and web services,'' 2004.
 
 \bibitem{soapui}
 SmartBear, ``The complete api test automation framework for soap, rest and
