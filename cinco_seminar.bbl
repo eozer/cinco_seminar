@@ -48,6 +48,10 @@ A.~Arcuri, ``Restful api automated test case generation,'' in {\em Software
 WebInject, ``Webinject is a free tool for automated testing of web applications
   and web services,'' 2004.
 
+\bibitem{fraser2013whole}
+G.~Fraser and A.~Arcuri, ``Whole test suite generation,'' {\em IEEE
+  Transactions on Software Engineering}, vol.~39, no.~2, pp.~276--291, 2013.
+
 \bibitem{soapui}
 SmartBear, ``The complete api test automation framework for soap, rest and
   more,'' 2005.
