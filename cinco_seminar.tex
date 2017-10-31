@@ -16,7 +16,7 @@
 \date{\today}
 
 \maketitle
-\numberofpagesinformation{\numberofpages\ pages + \numberofappendixpages\ appendices}
+\numberofpagesinformation{\numberofpages\ pages}
 
 \classification{\protect{\ \\
 		\  Applied computing $\rightarrow$ Enterprise computing  $\rightarrow$ Service-oriented architectures\
@@ -60,7 +60,7 @@ As far as testing web services are concerned much research has gone into investi
 
 Distributedness architecture of the services often minimizes the controllability and observability of the system, and it makes locating the failures difficult. Lack of transparency complicates and enforces an unsystematic manual test case generation by the service testers. So that, designed test cases are only error-prone to developer's opinion \cite{navas2014rest}. Likewise, headless (lack of GUI) architecture of the web services poses the similar issue. Differently, loose-coupling makes the test case creation demanding because of data incompatibility between subsystems, especially if the working mechanism of the system is unknown. Extending the testing coverage by including other applications such as 3rd party web services and databases makes it even more complicated to test RESTful web services.
 
-During the last years, there has been much progress related to testing RESTful web services. For example concerning the development of testing frameworks, \textit{Test-the-rest} \cite{chakrabarti2009test} demonstrated novel techniques to test RESTful services. Then following more specific approaches has undergone \cite{chakrabarti2010connectedness}, such as testing the \textit{connectedness} of the RESTful services. Subsequently, many of the approaches benefited from model-driven engineering methodology, Navas et al. \cite{navas2014rest} as an instance. As a result of recent advancements in the machine learning algorithms, new approaches \cite{navas2014rest, arcuri2017restful} have also been adapted to this field. Since it is not possible to cover every aspect of the RESTful web service testing, which in general categorized in \cite{canfora2009service, bozkurt2013testing}, we are only going to focus on a small set of articles. Hence, the following section provides an overview of system description of the articles as mentioned earlier.
+During the last years, there has been much progress related to testing RESTful web services. For example concerning the development of testing frameworks, \textit{Test-the-rest} \cite{chakrabarti2009test} demonstrated novel techniques to test RESTful services. Then following more specific approaches has undergone \cite{chakrabarti2010connectedness}, such as testing the \textit{connectedness} of the RESTful services. Subsequently, many of the approaches benefited from model-driven engineering methodology, Navas et al. \cite{navas2014rest} as an instance. As a result of recent advancements in the machine learning algorithms, new approaches \cite{navas2014rest, arcuri2017restful} have also been adapted to this field. Since it is not possible to cover every aspect of the RESTful web service testing, which in general categorized in \cite{canfora2009service, bozkurt2013testing}, we are only going to focus on a small set of articles. To achieve this end, we have chosen articles to present different methods for testing RESTful web-services. Hence, the following section provides an overview of system description of the articles as mentioned earlier.
 
 
 \subsection{System description and principal features}
@@ -89,7 +89,7 @@ Experiments took place in an internal infrastructure used by the authors. In the
 	}
 	\caption{Figure \ref{fig:ttr_system} shows the general architecture of TTR. Figure \ref{fig:ttr_test} presents an example test case written in TTR's specification language. The representation field from the response can be either XML or plain text format. Having this flexibility is particularly useful when the media-type of the response representation is not known \cite{chakrabarti2009test}.}
 \end{figure}
-\newpage
+
 % Second article
 \textbf{Connectedness testing of RESTful web services}
 
@@ -113,7 +113,7 @@ Experiments took place in a prototype of blogging web service called \textit{ebl
 	}
 	\caption{Overall procedure of connectedness testing shown in Figure \ref{fig:conn_system}, and Figure \ref{fig:conn_poc} gives an example of Post Class Graph that belongs to prototype web service \cite{chakrabarti2010connectedness}.}
 \end{figure}
-\newpage
+
 \textbf{Model-Based Testing of RESTful Web Services Using UML Protocol State Machines}
 
 So far we have seen that previous articles make use of specification-based testing. In this article Pinheiro et al. \cite{pinheiro2013model} presents a model-based method using UML protocol state machine to test RESTful web services. 
@@ -129,7 +129,7 @@ The proposed system presents a convenient way to make model-based testing for RE
 		\label{fig:uml_system}
 	\end{center}
 \end{figure}
-\newpage
+
 \textbf{REST service testing based on inferred XML schemas}
 
 In this article Navas et al. \cite{navas2014rest} present black-box automatic error detection system for RESTful web services based on statistical information. The method attempts to test web services without knowing its full specification. Also, with this approach authors have opened an opportunity for this area to employ Machine Learning algorithms.
@@ -173,11 +173,11 @@ The implemented tool experimented on three different small to medium sized web s
 \end{figure}
 
 \subsection{System analysis}
-In the literature, there are various efforts to describe and compare the different testing systems \cite{canfora2006testing, canfora2009service, bozkurt2013testing}. Since the main focus is on the different spectrum of testing approaches, neither of survey techniques in the previous articles are not directly feasible for our document. Besides, we believe that it does not give enough detail concerning practical implications. Given the fact, comparative analysis of the five RESTful web service testing methods is focused on mainly to following criterion: methodology, practicality, and evaluation.
+In the literature, there are various efforts to describe and compare the different testing systems \cite{canfora2006testing, canfora2009service, bozkurt2013testing}. Since the main focus is on the different spectrum of testing approaches, neither of survey techniques in the previous articles are directly feasible for our document. Besides, we believe that it does not give enough detail concerning practical implications. Given the fact, comparative analysis of the five RESTful web service testing methods is focused on mainly to following criterion: methodology, practicality, and evaluation.
 
 First of all, we picked different methods in consideration of testing RESTful web services to show that there is no one-size-fits-all solution. Different testing levels are mainly focused in the articles; however, approaches are not necessarily limited their testing levels, except in \textit{connectedness testing} \cite{chakrabarti2010connectedness}. All of the systems, but the system by Andrea Arcuri \cite{arcuri2017restful}, followed black-box testing method. Still, the choice mainly varies on the particular conditions \cite{canfora2009service}. On most of the approaches \cite{chakrabarti2009test, chakrabarti2010connectedness, pinheiro2013model} exhaustive test case generation is possible, but it is not as advanced in \cite{arcuri2017restful} where the test suites are aggregated to identify faults. Limitations in \textit{Test-the-rest} and \textit{connectedness testing} \cite{chakrabarti2009test, chakrabarti2010connectedness} are mainly due to the immaturity of the systems, where from many aspects existing tools outweigh. Whereas, the proposed method by Pinheiro et al. \cite{pinheiro2013model} is very sophisticated to implement and does not provide any experimental results. Then following, the issue in the system by Navas et al. \cite{navas2014rest} concerns statistics collected from simple test cases, where the error rate tends to be higher. Lastly, Andrea Arcuri's proposed method \cite{arcuri2017restful} inherits the drawbacks of evolutionary algorithms, particularly in this topic, the generated test cases give lower code coverage rate.
 
-Then following practical concerns, 4 out of 5 systems require controlled environment. Except the system by Navas et al. \cite{navas2014rest} in which the system does not have to know any specification about the SUT. Besides, only in the system by Andrea Arcuri \cite{arcuri2017restful} has to be manually configured in order to perform such operations. Other than that manual efforts simply concerning either description of the specific behavior of the system or test case composition. All but \cite{arcuri2017restful}, due to the low coverage, are appropriate for continuous integration/development practice. In the Table \ref{table:comparison}, we have demonstrated platforms and languages used in the reviewed articles, as well as their existing alternatives.
+Then following practical concerns, 4 out of 5 systems require the controlled environment. Except for the system by Navas et al. \cite{navas2014rest} in which the system does not have to know any specification about the SUT. Besides, only in the system by Andrea Arcuri \cite{arcuri2017restful} has to be manually configured in order to perform such operations. Other than that manual efforts simply concerning either description of the specific behavior of the system or test case composition. All but \cite{arcuri2017restful}, due to the low coverage, are appropriate for continuous integration/development practice. In the Table \ref{table:comparison}, we have demonstrated platforms and languages used in the reviewed articles, as well as their existing alternatives.
 
 Lastly, we believe that almost all of the evaluations of the systems have major flaws. To start with, Pinheiro et al. \cite{pinheiro2013model} have not provided any experimental validations regarding their system. Moreover, in \textit{Test-the-rest} and \textit{connectedness testing} \cite{chakrabarti2009test, chakrabarti2010connectedness} experiments validated on in-house web services, while Navas et al. and Andrea Arcuri \cite{navas2014rest, arcuri2017restful} have validated using at least 1 accessible web service. The choice of the testing environment directly affects the repeatability of the research, and we believe that only the research by Andrea Arcuri \cite{arcuri2017restful} reflects a feasible example. Further, in 2 articles \cite{chakrabarti2009test, arcuri2017restful} performance measurements performed, whereas, only Navas et al. \cite{navas2014rest} compared their system with other existing alternatives. In conclusion, the high majority of the research have minor to major issues concerning evaluation of their system.
 
